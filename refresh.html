@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refresh Button Example</title>
+    <style>
+        #refreshButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #refreshButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Webpage</h1>
+    <p>Click the button below to refresh the page.</p>
+    
+    <button id="refreshButton">Refresh Page</button>
+
+    <script>
+        document.getElementById("refreshButton").onclick = function() {
+            location.reload();
+        };
+    </script>
+
+</body>
+</html>

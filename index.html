@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="assignment.css"><script src="https://kit.fontawesome.com/27f42cf2b8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="house">
+        <div class="center-div1">
+            <div class="center-div">
+                <h1>Welcome</h1>
+                <input type="text" id="input" placeholder="Type Here">
+                <button id="refresh"><i class="fa-solid fa-rotate-right"></i></button>
+                <button onclick="show()">click me to Show what you write below</button>
+                <div id="p"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let divTag = document.getElementById('p')
+    let inputTag = document.getElementById('input')
+    function show() {
+        console.log(inputTag.value);
+          divTag.innerHTML = inputTag.value
+    }
+    document.getElementById("refresh").onclick = function() {
+            location.reload();
+        };
+</script>

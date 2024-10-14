@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="class"></div>
+    <p id="p"></p>
+    <input type="text" id="input">
+    <button onclick="show()">Show</button>
+</body>
+</html>
+
+<script>
+//    let divTag = document.getElementById('class')
+//    divTag.style.backgroundColor = 'blue'
+//    divTag.style.width = '100%'
+//    divTag.style.height = '100vh'
+
+   const num = Math.floor(Math.random() * 19) + 2;
+console.log(num);
+
+let string = 'javascript'
+
+let toUpperCase = string.toUpperCase();
+console.log(toUpperCase);
+console.log(string);
+
+let string1 = 'Javascript'
+string1.substr(4 , 6)
+console.log(string1.substr(4 , 6));
+
+let string2 = 'inDrive'
+string2.substr(2,5)
+console.log(string2.substr(2,5));
+// string2.substring(2 , 7)
+// console.log(string2.substring(2 , 7));
+
+let string3 = '30 Days Of JavaScript'
+console.log(string3.split(''));
+
+let string5 = "30 days  of  javascript"
+console.log(string5.replaceAll('30 days ','30 days'));
+
+let pTag = document.getElementById('p')
+let inutTag = document.getElementById('input')
+function show(params) {
+pTag.innerHTML = '<span>Hello</span>'
+inputTag.value;
+pTag.innerHTML = innerTag.value
+
+}
+
+</script>
